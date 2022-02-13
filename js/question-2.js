@@ -1,10 +1,10 @@
-const urlTWO =
+const url =
   "https://api.rawg.io/api/games?dates=2019-01-01,2019-12-31&ordering=-rating&key=326f406bc83046a7af9ac27c297b62bf";
 
 const html = document.querySelector("article");
 
 async function getResults() {
-  const response = await fetch(urlTWO);
+  const response = await fetch(url);
 
   const results = await response.json();
 
